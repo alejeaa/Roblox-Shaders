@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Roblox Shader Loading",
+  "version": "1.0",
+  "description": "This browser allows you to load shaders made by Alejea.",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png"
+  },
+  "permissions": [
+    "cookies",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://www.roblox.com/*",
+    "https://api.roblox.com/*",
+    "https://web.roblox.com/*",
+    "https://roblox.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

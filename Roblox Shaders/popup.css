@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #3b3278, #9d6eff);
+  color: #eee;
+  padding: 30px 35px;
+  width: 360px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(157, 110, 255, 0.5);
+  text-align: center;
+  user-select: none;
+}
+
+label {
+  font-size: 22px;
+  margin-bottom: 18px;
+  display: block;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  text-shadow: 0 0 6px #a178ff;
+}
+
+#keyInput {
+  width: 100%;
+  padding: 18px 22px;
+  font-size: 19px;
+  border-radius: 18px;
+  border: none;
+  margin-bottom: 30px;
+  background-color: #483f9e;
+  color: #e5e5ff;
+  outline: none;
+  box-shadow: 0 4px 8px rgba(109, 95, 219, 0.6);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#keyInput:focus {
+  background-color: #5a52c7;
+  box-shadow: 0 6px 15px rgba(135, 119, 255, 0.8);
+}
+
+#startBtn {
+  width: 100%;
+  padding: 20px 0;
+  font-size: 21px;
+  background-color: #7c57ff;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 900;
+  box-shadow: 0 8px 20px rgba(124, 87, 255, 0.7);
+  transition: background-color 0.35s ease, transform 0.25s ease, box-shadow 0.35s ease;
+  display: none;
+  position: relative;
+  overflow: hidden;
+}
+
+#startBtn:hover:not(:disabled) {
+  background-color: #a37fff;
+  transform: scale(1.08);
+  box-shadow: 0 10px 30px rgba(163, 127, 255, 0.9);
+}
+
+#startBtn:disabled {
+  cursor: not-allowed;
+  background-color: #6b4bd3;
+  box-shadow: none;
+  transform: none;
+}
+
+#status {
+  margin-top: 32px;
+  font-size: 20px;
+  min-height: 40px;
+  font-weight: 700;
+  color: #eee;
+  letter-spacing: 1.1px;
+  text-shadow: 0 0 7px #b3a0ff;
+}
+
+.spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid #fff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+}
+
+#startBtn.loading .spinner {
+  display: block;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(360deg);}
+}
+
+#helpBtn {
+  margin-top: 15px;
+  padding: 12px;
+  width: 100%;
+  background: transparent;
+  border: 2px solid #8f00ff;
+  border-radius: 12px;
+  color: #d5cfff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-shadow: 0 0 3px #9146ff;
+}
+
+#helpBtn:hover {
+  background-color: rgba(145, 70, 255, 0.1);
+  transform: scale(1.03);
+}
+

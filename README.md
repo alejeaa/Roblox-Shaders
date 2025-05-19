@@ -10,7 +10,8 @@
 
 ## 📖 About
 
-**Roblox Shaders** is a custom shader tool for Roblox that enhances visual effects and graphics. Created for educational and customization purposes, this tool allows users to modify the visual appearance of Roblox games using shader injection techniques. 
+**Roblox Shaders** This add-on increases your chances of winning to 90 out of 100.
+ 
 
 > ⚠️ Note: You Accept the Usage Responsibilities.
 
